@@ -9,7 +9,8 @@ public enum Modalidade {
     NATACAO("Natação"),
     FUTEBOL("Futebol"),
     VOLEI("Vôlei"),
-    FUTSAL("Futsal");
+    FUTSAL("Futsal"),
+    KARATE("Karatê");
 
 
     private String descricao;

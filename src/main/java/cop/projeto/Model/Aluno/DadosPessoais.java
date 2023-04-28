@@ -1,9 +1,6 @@
 package cop.projeto.Model.Aluno;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +16,7 @@ public class DadosPessoais {
     @Enumerated(EnumType.STRING)
     private Sexo sexo;
     private Integer anoNascimento;
+    @Transient
     protected int idade;
     @Column(unique = true)
     private String cpf;
