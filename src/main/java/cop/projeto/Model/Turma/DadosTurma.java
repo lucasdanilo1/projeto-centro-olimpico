@@ -51,5 +51,4 @@ public class DadosTurma {
             this.modalidade = dados.getDadosTurma().getModalidade();
         }
     }
-
 }
