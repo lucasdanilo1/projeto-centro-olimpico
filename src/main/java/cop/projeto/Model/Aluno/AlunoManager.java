@@ -56,6 +56,4 @@ public class AlunoManager {
         novaTurma.getInscritos().add(aluno);
     }
 
-
-
 }
