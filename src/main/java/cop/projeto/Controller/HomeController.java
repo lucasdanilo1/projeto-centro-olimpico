@@ -23,10 +23,14 @@ public class HomeController {
     private AlunoRepository alunoRepository;
     @Autowired
     private TurmaRepository turmaRepository;
-
     @GetMapping("inicio")
     public String PaginaInicial(){
         return "paginaInicial";
+    }
+
+    @GetMapping("modalidades")
+    public String modalidades(){
+        return "modalidades";
     }
 
     @GetMapping("formulario")
