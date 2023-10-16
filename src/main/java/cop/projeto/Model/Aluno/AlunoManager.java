@@ -55,7 +55,4 @@ public class AlunoManager {
         aluno.setStatusAluno(Status.INSCRITO);
         novaTurma.getInscritos().add(aluno);
     }
-
-
-
 }
