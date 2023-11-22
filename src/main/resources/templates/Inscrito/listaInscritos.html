@@ -115,7 +115,7 @@
               <th class="text-center">Envio</th>
               <th class="text-center">Inscrição</th>
               <th class="text-center">Nome</th>
-              <th class="text-center">Idade</th>
+              <th class="text-center">Turma</th>
               <th class="text-center">Modalidade</th>
               <th class="text-center">Status</th>
               <th class="text-center">Ativar ou Reativar</th>
@@ -128,7 +128,9 @@
               <td class="text-center">
                 <a th:href="@{/sistema/inscritos/{id}(id=${aluno.id})}" th:text="${aluno.dadosPessoais.nome}" th:class="(${aluno.statusAluno.descricao == 'Selecionado'} ? 'text-success' : '') + (${aluno.ativo} ? '' : 'text-muted') + (${aluno.statusAluno.descricao == 'Matriculado'} ? 'text-warning' : '')"></a>
               </td>
-              <td class="text-center" th:text="${aluno.dadosPessoais.idade}"></td>
+              <td class="text-center">
+                <a th:href="@{/sistema/turmas/{id}(id=${aluno.turma.id})}" th:text="${aluno.turma.nome}"></a>
+              </td>
               <td class="text-center" th:text="${aluno.turma.dadosTurma.modalidade.descricao}"></td>
               <td class="text-center" th:text="${aluno.statusAluno.descricao}"></td>
               <td class="text-center">

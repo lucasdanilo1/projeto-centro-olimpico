@@ -32,14 +32,13 @@ public class Turma {
     private List<Aluno> matriculados = new ArrayList<>();
     static private int numeroTurma = 1;
 
-
     public Turma(DadosCadastroTurma dados){
         this.nome = String.format("T-%03d", numeroTurma++);
         this.status = StatusTurma.TURMA_ABERTA;
         this.dadosTurma = new DadosTurma(dados);
     }
 
-    //    public static List<Aluno> getMatriculados() {
+//    public static List<Aluno> getMatriculados() {
 //        return matriculados;
 //    }
 
@@ -49,10 +48,7 @@ public class Turma {
         }
     }
 
-
     public List<Aluno> getInscritos() {
         return inscritos;
     }
-
 }
-

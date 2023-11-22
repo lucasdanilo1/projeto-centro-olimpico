@@ -32,7 +32,8 @@ public class AlunoController {
     public String seleciona(@PathVariable Long id){
         Aluno aluno = repository.getReferenceById(id);
         aluno.selecionaAluno();
-        return "redirect:/sistema/turmas/" +id;
+        System.out.println(id);
+        return "redirect:/sistema/turmas/" + aluno.getTurma().getId();
     }
 
     @Transactional
