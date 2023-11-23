@@ -8,6 +8,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 
-COPY --from=build /target/projeto-0.0.1-SNAPSHOT.jar projeto-0.0.1-SNAPSHOT.jar
+COPY --from=build /target/copapp.jar copapp.jar
 
-ENTRYPOINT [ "java", "-jar", "projeto-0.0.1-SNAPSHOT.jar" ]
+ENTRYPOINT [ "java", "-jar", "copapp.jar" ]
